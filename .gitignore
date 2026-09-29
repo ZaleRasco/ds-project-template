@@ -1,0 +1,22 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Secrets
+.env
+
+# R clutter
+.Rhistory
+.RData
+.Rproj.user/
+
+# macOS and Jupyter clutter
+.DS_Store
+.ipynb_checkpoints/

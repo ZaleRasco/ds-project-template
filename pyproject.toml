@@ -1,0 +1,31 @@
+[project]
+name = "my-project"
+version = "0.1.0"
+description = "TODO: one-line project description"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "ipykernel>=7.3.0",
+    "jupyter>=1.1.1",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.3",
+    "pandas>=3.0.6",
+    "scikit-learn>=1.9.1",
+    "scipy>=1.18.1",
+    "seaborn>=0.13.2",
+    "statsmodels>=0.15.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13"]
+build-backend = "uv_build"
+
+# Import name stays `tools` whatever the project is called.
+[tool.uv.build-backend]
+module-name = "tools"
+
+[tool.envcheck]
+kernels = ["python3"]
+# Projects using R: replace the line above with these two.
+# kernels = ["python3", "ir"]
+# r_packages = ["IRkernel"]
