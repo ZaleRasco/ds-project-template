@@ -14,6 +14,14 @@ package importable from any notebook, and optional R notebooks via IRkernel.
 
 ## Setup
 
+Joining an existing project? Clone the team's repo; only the project creator
+uses the template. Skip this step if you already have a local copy:
+
+```sh
+git clone <project-repo-url> <project-folder>
+cd <project-folder>
+```
+
 From the project root:
 
 ```sh
@@ -57,6 +65,9 @@ Run Python and Jupyter through uv (`uv run python ...`, `uv run jupyter ...`).
 Manage dependencies with `uv add <package>` so `pyproject.toml` and `uv.lock`
 stay in sync; avoid installing directly with pip in the uv-managed environment.
 
+After pulling changes to `pyproject.toml` or `uv.lock`, run `uv sync` and
+restart any running notebook kernels.
+
 Export a notebook to HTML with:
 
 ```sh
@@ -65,10 +76,13 @@ uv run jupyter nbconvert --to html --output-dir reports <notebook>.ipynb
 
 ## Group work
 
-A shared repo is its own project. One person creates it from this template;
-everyone else clones that repo. Keep personal and shared repos in sibling
-folders, each with its own environment and `tools` package. Open each repo in
-its own VS Code window and follow [Setup](#setup).
+A shared repo is its own project. Personal repos are optional; if you keep one,
+place it alongside the shared repo and open each in its own VS Code window.
+
+Keep team notebooks, reusable code, and data-loading instructions in the shared
+repo, including exploratory work. Use a personal repo for private notes and
+separate analyses. The shared project should run without access to anyone's
+personal repo.
 
 Coordinate notebook ownership to reduce conflicts, agree on who assembles the
 final analysis, and put reusable functions in `src/tools/`. Organize notebooks
