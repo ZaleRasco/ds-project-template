@@ -1,7 +1,7 @@
 # Agent instructions
 
 ## Project
-<!-- One or two lines: what this project is and anything agents should know. -->
+<!-- What this project is and anything agents should know. -->
 
 ## Environment
 - Python is managed by uv. Dependencies are declared in `pyproject.toml` (exact
