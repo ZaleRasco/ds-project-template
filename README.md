@@ -68,8 +68,7 @@ uv run jupyter nbconvert --to html --output-dir reports <notebook>.ipynb
 A shared repo is its own project. One person creates it from this template;
 everyone else clones that repo. Keep personal and shared repos in sibling
 folders, each with its own environment and `tools` package. Open each repo in
-its own VS Code window, run `uv sync` from its root, and select its `.venv`
-notebook kernel.
+its own VS Code window and follow [Setup](#setup).
 
 Coordinate notebook ownership to reduce conflicts, agree on who assembles the
 final analysis, and put reusable functions in `src/tools/`. Organize notebooks
