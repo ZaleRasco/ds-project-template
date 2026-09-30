@@ -22,8 +22,8 @@
 - Use LaTeX in notebook markdown cells for math.
 
 ## Layout
-- `data/raw/`: holds original inputs; never modified. 
-- `data/processed/`: Derived and transformed data.
+- `data/raw/`: original inputs; never modified.
+- `data/processed/`: derived and transformed data.
 - `notebooks/`: exploratory and final analysis notebooks.
 - `scripts/`: standalone commands such as `check_env.py`.
 - `src/tools/`: shared, importable functions.

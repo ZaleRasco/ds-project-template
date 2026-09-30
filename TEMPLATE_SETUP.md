@@ -7,7 +7,7 @@ One-time steps after creating a new project from this template. Delete this file
 2. **Name the project.** In `pyproject.toml`, set `name` and `description`. The
    import name stays `tools`.
 3. **Describe the project:** fill in `## Project` in `AGENTS.md` and rewrite
-   the README intro. Keep everything after `## Prerequisities`.
+   the README intro. Keep everything after `## Prerequisites`.
 4. **Follow the [README setup instructions](README.md#setup)** and
    [optional setup](README.md#optional-setup) as needed.
 5. **Delete this file**, remove its link from the README, and commit.

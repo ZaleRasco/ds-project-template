@@ -45,11 +45,11 @@ Put standalone commands in `scripts/`, and reusable functions you will import la
 
 ## Group work
 
-Coordinate and assign notebook ownership to reduce merge conflicts. 
+Coordinate and assign notebook ownership to reduce merge conflicts.
 Agree ahead of time on who will assemble and export the final analysis.
 
 A shared repo is its own project. Personal repos are optional; if you keep one,
-place the folder alongside (separate from) the shared repo and open each in its own VS Code window. 
+place the folder alongside (separate from) the shared repo and open each in its own VS Code window.
 
 ## uv Reminders
 
